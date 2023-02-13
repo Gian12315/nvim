@@ -1,3 +1,5 @@
 require("mason-null-ls").setup({
-    ensure_installed = { "stylua", "jq" }
+    ensure_installed = nil,
+    automatic_installation = true,
+    automatic_seupt = false,
 })

@@ -1,3 +1,5 @@
+local servers = require('user.config.lsp.servers')
+
 require("mason-lspconfig").setup {
-    ensure_installed = {"lua_ls", "jdtls", "rust_analyzer", "jsonls" },
+    ensure_installed = servers,
 }

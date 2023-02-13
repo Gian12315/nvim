@@ -1,12 +1,7 @@
 local lspconfig = require("lspconfig")
 local handlers = require("user.config.lsp.handlers")
 
-local servers = {
-    "jdtls",
-    "jsonls",
-    "rust_analyzer",
-    "lua_ls",
-}
+local servers = require("user.config.lsp.servers")
 
 local opts = {
     on_attach = handlers.on_attach,
