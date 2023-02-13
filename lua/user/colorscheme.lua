@@ -1,4 +1,4 @@
-local colorscheme = "material"
+local colorscheme = "catppuccin-mocha"
 
 if colorscheme == "material" then
     vim.g.material_style = "deep ocean"

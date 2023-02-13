@@ -156,6 +156,8 @@ require("lazy").setup({
 
     "lunarvim/darkplus.nvim",
 
+    { "catppuccin/nvim", as="cattpuccin"},
+
     "marko-cerovac/material.nvim",
 
     {
