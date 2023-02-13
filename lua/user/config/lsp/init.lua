@@ -5,7 +5,7 @@ local servers = {
     "jdtls",
     "jsonls",
     "rust_analyzer",
-    "sumneko_lua",
+    "lua_ls",
 }
 
 local opts = {
@@ -28,7 +28,9 @@ for _, server in ipairs(servers) do
         vim.notify("LSP: User configuration for " .. server .. " not found. Using defaults. ", 1)
         user_config = {}
     end
-    local config = vim.tbl_deep_extend("force", default_config, user_config, opts)
+    vim.inspect(default_config)
+    vim.inspect(user_config)
+    local config = vim.tbl_extend("force", default_config, user_config, opts)
     lspconfig[server].setup(config)
 end
 
